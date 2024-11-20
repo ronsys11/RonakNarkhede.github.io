@@ -78,7 +78,7 @@ work:
     company_url: 'https://www.phychem.com/'
     company_logo: ''
     date_start: 2022-12-01
-    date_end: 2023-02-1
+    date_end: 2023-02-01
     summary: |
       Responsibilities include:
       - Played a key role in the development of a parallel delta robot, contributing to both hardware integration and software
