@@ -33,18 +33,18 @@ profiles:
   - icon: at-symbol
     url: 'mailto:ronaknar2001@gmail.com'
     label: E-mail Me
-  - icon: ''
-    url: 
-  - icon: ''
-    url: 
+ # - icon: ''
+  #  url: 
+ # - icon: ''
+   # url: 
   - icon: brands/github
     url: https://github.com/ronsys11
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ronak-narkhede/
-  - icon: ''
-    url: 
-  - icon: ''
-    url: 
+  #- icon: ''
+   # url: 
+  #- icon: ''
+  #  url: 
 
 interests:
   - Robot Manipulation
