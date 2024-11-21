@@ -1,13 +1,9 @@
 ---
-title: scikit-learn
-date: 2023-10-26
-external_link: https://github.com/scikit-learn/scikit-learn
+title: TD3 Based Door Opening Agent
+date: 2024-10-15
+external_link: https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
 ---
-
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+A Pytorch implementation of TD3 applied to opening a door controlling a Panda robot in Robosuite environments.
 
 <!--more-->

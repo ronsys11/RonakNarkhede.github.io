@@ -33,17 +33,17 @@ profiles:
   - icon: at-symbol
     url: 'mailto:ronaknar2001@gmail.com'
     label: E-mail Me
-  - icon: 
+  - icon: ''
     url: 
-  - icon: 
+  - icon: ''
     url: 
   - icon: brands/github
     url: https://github.com/ronsys11
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ronak-narkhede/
-  - icon: 
+  - icon: ''
     url: 
-  - icon: 
+  - icon: ''
     url: 
 
 interests:
@@ -137,22 +137,22 @@ skills:
         icon: 
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
                 
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 
-        icon: 
-      - name: Football
-        description: ''
-        percent: 
-        icon: 
-      - name: Chess
-        description: ''
-        percent: 
-        icon: 
+#  - name: Hobbies
+#    color: '#eeac02'
+#    color_border: '#f0bf23'
+#    items:
+#      - name: Hiking
+#        description: ''
+#        percent: 
+#        icon: 
+#      - name: Football
+#        description: ''
+#        percent: 
+#        icon: 
+#      - name: Chess
+#        description: ''
+#        percent: 
+#        icon: 
 
 languages:
   - name: English
