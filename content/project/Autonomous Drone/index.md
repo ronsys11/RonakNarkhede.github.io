@@ -8,3 +8,4 @@ summary: |2-
   - Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation.
   - Implemented behavioral cloning, allowing the drone to learn and replicate human-controlled maneuvers.
 
+<!--more-->

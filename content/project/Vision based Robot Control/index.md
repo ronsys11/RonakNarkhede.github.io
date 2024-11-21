@@ -10,5 +10,5 @@ tags:
 - Integrated ROS, ArUco markers, and a visual feedback device to enable non-expert operators to program robots effectively.  
 - Tested on multiple manipulators, achieving high accuracy with an RMSE under 6.5 mm.  
 - Enhanced accessibility and efficiency in industrial, educational, and creative automation tasks.  
-
+<!--more-->
 
