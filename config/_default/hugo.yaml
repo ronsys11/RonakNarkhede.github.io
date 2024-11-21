@@ -24,7 +24,7 @@ removePathAccents: true
 build:
   writeStats: true
 enableGitInfo: false
-summaryLength: 200
+summaryLength: 300
 pagination:
   pagerSize: 10
 enableEmoji: true
