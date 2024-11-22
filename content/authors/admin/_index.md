@@ -57,6 +57,12 @@ education:
     date_start: 2024-09-04
     date_end: 2025-12-11
     summary: |
+
+  - area: Bachelor of Technology in Mechatronics with spl in Robotics
+    institution: SRM University
+    date_start: 2020-09-04
+    date_end: 2024-06-11
+    summary: |
  
   
 work:
