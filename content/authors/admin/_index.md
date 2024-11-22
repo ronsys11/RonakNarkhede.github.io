@@ -202,6 +202,5 @@ languages:
 
 ## About Me
 
-I am a Robotics Graduate Student at the University of Minnesota, specializing in Computer Vision and Autonomous Systems. I am advised by Professor Karthik Desingh in the Robotics: Perception, and Manipulation (RPM) Lab. Prior to pursuing masters, I worked at Nuclear Power Corporation of India Limited and Bhabha Atomic Research Center, contributing to the design of a spent fuel handling machine—a large manipulator for handling fuel assemblies in a spend fuel storage facility.
-
+I am a Robotics Graduate Student at the University of Minnesota, specializing in Computer Vision and Robot control. The majority of my work and project experience has involved combining software and hardware for developing robotic platforms along with developing software for various applications.
 My interest lies in developing intelligent robots to address critical industrial challenges. With a strong foundation in math and physics, coupled with a keen interest in adopting new technologies, I am eager to contribute to industries by creating artificial intelligence for enhancing the capabilities of robots.
