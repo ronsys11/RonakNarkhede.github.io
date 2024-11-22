@@ -32,7 +32,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: 'Teaching robots how to learn, see and do'
+      title: ''
       subtitle: ''
       text: |-
         All the world's a stage, And all the men and women merely players - William Shakespeare. What do I want? Play the game => win :)

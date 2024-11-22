@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Projects
-      text: I just really like making robots work.
+      text: Some uber cool things I have worked on in the past
       filters:
         folders:
           - project
