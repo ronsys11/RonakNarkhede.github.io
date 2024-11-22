@@ -32,8 +32,8 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: 'I just really like making Robots work'
-      subtitle: ''
+      title: 'All the world's a stage, And all the men and women merely players - William Shakespeare. What do I want? Play the game => win :)'
+      subtitle: 'All the world's a stage, And all the men and women merely players - William Shakespeare. What do I want? Play the game => win :)'
       text: |-
     design:
       columns: '1'
