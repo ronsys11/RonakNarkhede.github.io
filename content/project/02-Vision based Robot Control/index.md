@@ -3,6 +3,7 @@ title: Vision based Control of a Serial Manipulator
 date: 2023-08-23
 external_link: https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M
 tags:
+weight: 3
 ---
 
 - Developed a novel Human-Machine Interface to simplify programming robotic manipulators.  
