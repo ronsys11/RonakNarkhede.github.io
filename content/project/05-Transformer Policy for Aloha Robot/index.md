@@ -1,6 +1,5 @@
 ---
 title: Transformer Policy for Aloha Robot
-date: 2025-02-26
 external_link: https://drive.google.com/drive/u/0/folders/15IMl670nH-7Ln1oAfM3LpgCL-k2uVWAq
 tags:
 weight: 2
