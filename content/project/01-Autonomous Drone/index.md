@@ -1,6 +1,5 @@
 ---
 title: Sir Hovers-a-Lot (Drone)
-date: 2024-01-14
 external_link: https://drive.google.com/drive/folders/1iw5D4wbwfcecyPsg6_81mdaVSpeTGBU_
 tags:
 weight: 4
