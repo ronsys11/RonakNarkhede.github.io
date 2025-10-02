@@ -1,8 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ""
-cascade:
-  show_date: false
 date: 2022-10-24
 type: landing
 
