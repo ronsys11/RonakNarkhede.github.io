@@ -3,9 +3,7 @@ title: 'Projects'
 date: 2024-05-19
 type: landing
 design:
-  # Section spacing
   spacing: '1rem'
-# Page sections
 sections:
   - block: collection
     content:
@@ -14,10 +12,11 @@ sections:
       filters:
         folders:
           - project
-      sort_by: 'Weight'          
-      sort_ascending: true       
+      sort_by: 'Weight'
+      sort_ascending: true
     design:
-      view: card                 
-      columns: 2                  
-      fill_image: true           
+      view: card
+      columns: 2
+      fill_image: true
+      show_date: false              
 ---
