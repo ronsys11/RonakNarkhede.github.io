@@ -3,7 +3,7 @@ title: Aruco Cube Pose Estimation
 date: 2023-07-13
 external_link: https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh
 tags:
-weight: 5
+weight: 8
 ---
 
 - Real-time ArUco marker detection using OpenCV.
