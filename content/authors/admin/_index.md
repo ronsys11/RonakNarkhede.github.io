@@ -66,19 +66,28 @@ education:
  
   
 work:
-  - position: Computer Vision Intern
-    company_name: Phychem Technologies
-    company_url: 'https://www.phychem.com/'
+  - position: Graduate Researcher
+    company_name: Medical Robots and Devices Lab
+    company_url: 'https://mrd.umn.edu/'
     company_logo: ''
-    date_start: 2023-05-01
-    date_end: '2023-08-01'
+    date_start: 2024-08-23
+    date_end: 'Ongoing'
     summary: |
       Responsibilities include:
-      - Developed a model capable of classifying between two types of roto moulding powders.
-      - Implemented a custom Convolutional Neural Network (CNN) architecture, fine-tuned using transfer learning from pre-trained
-        model ResNet, achieving an 86% classification accuracy.
-      - Collaborated with embedded systems engineers to integrate the vision system into the existing assembly line infrastructure,
-        developing a high-performance sorting algorithm in C++ that processed 76 samples per minute.
+      - Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application.
+      - Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.
+      - Built a data streaming interface to share data using UDP with AI and hardware teams.
+  - position: Graduate Researcher
+    company_name: Choice Robotics Lab
+    company_url: 'https://choice.umn.edu/'
+    company_logo: ''
+    date_start: 2024-01-12
+    date_end: '2024-05-13'
+    summary: |
+      Responsibilities include:
+      - Developed a hybrid training pipeline using Behavioral Cloning and Soft Actor Critic to train a simulated                            bimanual robot for a complex manipulation task.
+      - Engineered a vision-based policy with a custom CNN in PyTorch that learns directly from pixel data, achieving a high                success rate on the cube transfer task.
+      - Implemented a complete MLOps (pytorch) workflow, including data preprocessing of expert demonstrations, model                       training and performance evaluation with analysis and comparison with other sota models.
   - position: Robotics Engineer
     company_name: Phychem Technologies
     company_url: 'https://www.phychem.com/'
