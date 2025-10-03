@@ -118,9 +118,7 @@ skills:
       - name: C++
         description: ''
         percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-          
+        icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
       - name: Ros1/2
         description: ''
         percent: 
