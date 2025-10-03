@@ -17,6 +17,5 @@ sections:
     design:
       view: card
       columns: 1
-      fill_image: False
-      show_date: false              
+      fill_image: False            
 ---
