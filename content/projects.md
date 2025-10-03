@@ -16,7 +16,7 @@ sections:
       sort_ascending: true
     design:
       view: card
-      columns: 2
-      fill_image: true
+      columns: 1
+      fill_image: False
       show_date: false              
 ---
