@@ -202,5 +202,7 @@ languages:
 
 ## About Me
 
-I am a Robotics Graduate Student at the University of Minnesota, specializing in Computer Vision and Robot control. The majority of my work and project experience has involved combining software and hardware for developing robotic platforms along with developing software for various applications.
-My interest lies in developing intelligent robots to address critical industrial challenges. With a strong foundation in math and physics, coupled with a keen interest in adopting new technologies, I am eager to contribute to industries by creating artificial intelligence for enhancing the capabilities of robots.
+Hello!
+I'm Ronak, a robotics graduate student at University of Minnesota. I'm constantly looking for problems to solve or processes to make more efficient. I love hacking on hardware. Tools helped humans build civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story. We're not there yet, so let's roll up our sleeves and get to work.
+
+I'm a bit of a tech geek and most of my free time is spent building things. On holidays I love exploring the outdoors with family and friends. I'm curious about how things work. If you want to talk about something interesting, feel free to reach out!
