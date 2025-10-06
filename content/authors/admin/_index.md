@@ -106,52 +106,6 @@ work:
         control for enhanced precision.
 
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 
-        icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-      - name: C++
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-
-      - name: Ros1/2
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original-wordmark.svg" />
-      - name: OpenCV
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
-      - name: PyTorch
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
-      - name: Numpy
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
-      - name: Pandas
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
-      - name: Matlab
-        description: ''
-        percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
-
 #  - name: Hobbies
 #    color: '#eeac02'
 #    color_border: '#f0bf23'
