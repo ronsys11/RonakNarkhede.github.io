@@ -66,7 +66,18 @@ education:
  
 
 work:
-  - position: Graduate Researchers
+  - position: Graduate Researcher
+    company_name: Medical Robots and Devices Lab
+    company_url: 'https://mrd.umn.edu/'
+    company_logo: ''
+    date_start: 2024-08-23
+    date_end: 'Ongoing'
+    summary: |
+      Responsibilities include:
+      - Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application.
+      - Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.
+      - Built a data streaming interface to share data using UDP with AI and hardware teams.
+  - position: Graduate Researcher
     company_name: Choice Robotics Lab
     company_url: 'https://choice.umn.edu/'
     company_logo: ''
