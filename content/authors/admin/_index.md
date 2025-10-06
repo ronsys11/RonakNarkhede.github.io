@@ -122,8 +122,7 @@ skills:
       - name: Ros1/2
         description: ''
         percent: 
-        icon: 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original-wordmark.svg" />
+        icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original-wordmark.svg" />
       - name: OpenCV
         description: ''
         percent: 
