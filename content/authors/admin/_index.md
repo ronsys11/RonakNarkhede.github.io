@@ -58,7 +58,7 @@ education:
     date_end: 2025-12-11
     summary: |
 
-  - area: B.Tech Mechatronics with specialization in Robotics
+  - area: B.Tech Mechatronics
     institution: SRM University
     date_start: 2020-09-04
     date_end: 2024-06-11
