@@ -71,7 +71,7 @@ work:
     company_url: 'https://mrd.umn.edu/'
     company_logo: ''
     date_start: 2024-08-23
-    date_end: Ongoing
+    date_end: 
     summary: |
       Responsibilities include:
       - Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application.
