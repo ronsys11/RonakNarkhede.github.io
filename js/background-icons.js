@@ -1,5 +1,5 @@
 // Background Wallpaper Icons Generator
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Create the container
     const container = document.createElement('div');
     container.id = 'background-wallpaper';
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // List of icon filenames (add your own icons to images/backgroundIcons/)
     const icons = [
         'robot.svg',
-        'gear.svg', 
+        'gear.svg',
         'circuit.svg',
         'microchip.svg',
         'code.svg',
@@ -22,14 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < iconCount; i++) {
         // Pick a random icon
         const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-        
+
         // Random position in grid pattern with jitter
         const posX = (i % 5) * 20 + Math.random() * 10;
         const posY = Math.floor(i / 5) * 30 + Math.random() * 15;
 
         // Create the icon
         const img = document.createElement('img');
-        img.src = `images/backgroundIcons/${randomIcon}`;
+        // Use baseurl for GitHub Pages
+        const baseurl = '/RonakNarkhede.github.io';
+        img.src = `${baseurl}/images/backgroundIcons/${randomIcon}`;
         img.className = 'wallpaper-icon';
 
         // Position
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img.style.transform = `rotate(${Math.random() * 360}deg)`;
 
         // Randomize Speed (Between 40s and 80s to match the "slowRotate" feel)
-        const duration = Math.random() * 40 + 40; 
+        const duration = Math.random() * 40 + 40;
         img.style.animationDuration = `${duration}s`;
 
         // Randomize Direction (some clockwise, some counter-clockwise)
