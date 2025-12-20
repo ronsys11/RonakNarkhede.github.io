@@ -1,0 +1,50 @@
+/* --- Background Icon Animation & Sizing --- */
+
+/* The Container */
+#background-wallpaper {
+    position: fixed; /* Changed to fixed so it stays while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -999;
+}
+
+/* The Rotation Keyframes */
+@keyframes slowRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* The Icon Style */
+.wallpaper-icon {
+    position: absolute;
+    opacity: 0.15; /* Kept subtle for background */
+    pointer-events: none;
+    
+    /* Default Size */
+    width: 80px; 
+    height: 80px;
+
+    /* Animation Logic */
+    animation-name: slowRotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Responsive Sizing (Media Queries from snippet) */
+@media (max-width: 768px) {
+    .wallpaper-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wallpaper-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
