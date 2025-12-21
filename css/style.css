@@ -24,7 +24,6 @@ body {
 /* Ensure the main wrappers are semi-transparent white */
 .wrapper,
 .container,
-.profile-doc,
 .content {
     background-color: rgba(255, 255, 255, 0.95) !important;
     position: relative;

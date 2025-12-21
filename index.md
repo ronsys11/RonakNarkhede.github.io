@@ -3,9 +3,11 @@ layout: default
 ---
 
 ## About Me
-<tr>
-    <td> <img class="profile-picture" src="me.jpeg" style="width: 25%; height: auto;"></td>
-    <td><div class="profile-doc">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+    <div style="flex: 0 0 25%; min-width: 150px;">
+        <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 50%;">
+    </div>
+    <div class="profile-doc" style="flex: 1; min-width: 250px;">
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
 		<br> 
@@ -16,8 +18,8 @@ layout: default
 		<a href="https://www.linkedin.com/in/ronak-narkhede/">
 			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br> 
 			<br>
-	</div></td>
-</tr>
+	</div>
+</div>
 
 I'm Ronak, a robotics graduate student at University of Minnesota. I'm constantly looking for problems to solve or processes to make more efficient. I love hacking on hardware. Tools helped humans build civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story.
 
