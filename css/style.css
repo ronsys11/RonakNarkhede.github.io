@@ -2,7 +2,8 @@
 
 /* The Container */
 #background-wallpaper {
-    position: fixed; /* Changed to fixed so it stays while scrolling */
+    position: fixed;
+    /* Changed to fixed so it stays while scrolling */
     top: 0;
     left: 0;
     width: 100%;
@@ -12,20 +13,40 @@
     z-index: -999;
 }
 
+/* Make body/html transparent so background icons show through */
+html,
+body {
+    background-color: transparent !important;
+}
+
+/* Keep the main content wrapper white for readability */
+.wrapper,
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
 /* The Rotation Keyframes */
 @keyframes slowRotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* The Icon Style */
 .wallpaper-icon {
     position: absolute;
-    opacity: 0.15; /* Kept subtle for background */
+    opacity: 0.15;
+    /* Kept subtle for background */
     pointer-events: none;
-    
+
     /* Default Size */
-    width: 80px; 
+    width: 80px;
     height: 80px;
 
     /* Animation Logic */
