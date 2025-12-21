@@ -5,10 +5,10 @@ layout: default
 ## About Me
 <table style="width: 100%; border: none; border-collapse: collapse;">
 <tr>
-    <td style="width: 30%; vertical-align: middle; padding: 20px;"> 
+    <td style="width: 30%; vertical-align: middle; padding: 20px; border: none;"> 
         <img class="profile-picture" src="me.jpeg" style="width: 100%; max-width: 250px; height: auto; border-radius: 10px;">
     </td>
-    <td style="vertical-align: middle; padding: 20px;">
+    <td style="vertical-align: middle; padding: 20px; border: none;">
         <div class="profile-doc">
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
