@@ -142,7 +142,7 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
 
 <style>
     body {
-        background-color: #ffffff !important; /* Set background to white */
+        /* Background is now transparent to show rotating icons */
         color: #000000; /* Change text color to black for visibility */
     }
     h1, h2, h3, h4, h5, h6 {
