@@ -148,7 +148,7 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
 
 <style>
     body {
-        /* Background is now transparent to show rotating icons */
+        background-color: #ffffff !important; /* Set background to white */
         color: #000000; /* Change text color to black for visibility */
     }
     h1, h2, h3, h4, h5, h6 {
@@ -245,7 +245,7 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
     td, th {
         color: #000000 !important;
         padding: 8px;
-        /* background-color: #ffffff !important; Removed to allowing transparency */
+        background-color: #ffffff !important;
     }
     
     /* Profile section */
@@ -258,8 +258,9 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
         color: #000000 !important; /* Ensure all text in the resume section is black */
     }
     
-    /* Fix for section backgrounds */
-    /* section, div, article background rule removed to allow transparency */
+    section, div, article {
+        background-color: #ffffff !important;
+    }
 </style>
 
 
