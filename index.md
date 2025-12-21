@@ -239,7 +239,7 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
     td, th {
         color: #000000 !important;
         padding: 8px;
-        background-color: #ffffff !important;
+        /* background-color: #ffffff !important; Removed to allowing transparency */
     }
     
     /* Profile section */

@@ -45,8 +45,8 @@ body {
 /* The Icon Style */
 .wallpaper-icon {
     position: absolute;
-    opacity: 0.15;
-    /* Kept subtle for background */
+    opacity: 0.4;
+    /* Increased from 0.15 for better visibility */
     pointer-events: none;
 
     /* Default Size */
