@@ -10,19 +10,23 @@
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: -999;
+    z-index: -1;
+    /* Moved from -999 to -1 to sit above browser background but behind content */
 }
 
 /* Make body/html transparent so background icons show through */
 html,
 body {
     background-color: transparent !important;
+    min-height: 100%;
 }
 
-/* Keep the main content wrapper white for readability */
+/* Ensure the main wrappers are semi-transparent white */
 .wrapper,
-.container {
-    background-color: rgba(255, 255, 255, 0.95);
+.container,
+.profile-doc,
+.content {
+    background-color: rgba(255, 255, 255, 0.95) !important;
     position: relative;
     z-index: 1;
 }
