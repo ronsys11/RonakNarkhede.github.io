@@ -253,9 +253,7 @@ I'm a bit of a tech geek and most of my free time is spent building things. On h
     }
     
     /* Fix for section backgrounds */
-    section, div, article {
-        background-color: #ffffff !important;
-    }
+    /* section, div, article background rule removed to allow transparency */
 </style>
 
 
