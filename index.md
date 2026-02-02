@@ -19,9 +19,9 @@ layout: default
 	</div></td>
 </tr>
 
-I'm Ronak, a robotics graduate student at University of Minnesota. I'm constantly looking for problems to solve or processes to make more efficient. I love hacking on hardware. Tools helped humans build civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story.
+I'm Ronak, a robotics graduate student at University of Minnesota. I'm constantly looking for problems to solve or processes to make more efficient. I love hacking on hardware, tools helped humans build civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (And also generate shareholder value along the way :).
 
-I'm a bit of a tech geek and most of my free time is spent building things. On holidays I love exploring the outdoors with family and friends. I'm curious about how things work. If you want to talk about something interesting, feel free to reach out!
+
 
 
 ---
