@@ -9,8 +9,8 @@ layout: default
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
 		<br> 
-		<a href="mailto:ronaknar2001@gmail.com">
-			<i class="fa fa-envelope" aria-hidden="true"></i> ronaknar2001@gmail.com</a> <br> 
+		<a href="mailto:narkh009@umn.edu">
+			<i class="fa fa-envelope" aria-hidden="true"></i> narkh009@umn.edu</a> <br> 
 		<a href="https://github.com/ronsys11">
 			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br> 
 		<a href="https://www.linkedin.com/in/ronak-narkhede/">
@@ -19,7 +19,9 @@ layout: default
 	</div></td>
 </tr>
 
-I'm Ronak, a robotics graduate student at University of Minnesota. I'm constantly looking for problems to solve or processes to make more efficient. I love hacking on hardware, tools helped humans build civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (And also generate shareholder value along the way :).
+Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with Professor Timothy Kowaleski. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+
+When I am not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
 
 
 
