@@ -21,7 +21,7 @@ layout: default
       <div style="text-align: left;">
         Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
         <br><br>
-        When I am not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
+        When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
@@ -364,16 +364,14 @@ layout: default
 </div>
 
 
-<!-- ---
+---
 ## Invited talks
 
 Date | Event | Details
 -----|-------|--------
-April, 24th 2024 | FMX 2024  | Survey on NeRFs and 3DGS for the Lighting & Rendering track organized by [Christophe Hery](https://www.linkedin.com/in/christophehery/) in Stuttgart, Germany. Thank you all for the great time there!
-May, 6th 2024 | Machine Learning Coffee Seminar | Finnish Center for Artificial Intelligence (FCAI) [talk](https://fcai.fi/calendar/2024/5/6/juho-kannala-tba) on neural rendering. -->
+April 30, 2025 | Design of Medical Devices Conference | Talk revieiwng the Corpath GRX and Magellan robot for stroke intervention.
 
 
 ---
 <br>
  Template Credits : <a href="https://maturk.github.io">Matias Turkulainen</a>
-
