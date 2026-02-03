@@ -25,7 +25,7 @@ layout: default
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
-      <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 10px; padding-top: 50px;">
+      <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 8px; margin-top: 40px;">
     </td>
   </tr>
 </table>
