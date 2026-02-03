@@ -5,26 +5,26 @@ layout: default
 ## About Me
 <table style="border: none; background: transparent; width: 100%;">
   <tr>
-    <td style="width: 70%; vertical-align: top; border: none; padding-right: 20px;">
+    <td style="width: 70%; vertical-align: middle; border: none; padding-right: 20px;">
       <div class="profile-doc">
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
 		<br> 
 		<a href="mailto:narkh009@umn.edu">
-			<i class="fa fa-envelope" aria-hidden="true"></i> narkh009@umn.edu</a> <br> 
+			<i class="fa fa-envelope" aria-hidden="true"></i> narkh009@umn.edu</a> <br>
 		<a href="https://github.com/ronsys11">
-			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br> 
+			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br>
 		<a href="https://www.linkedin.com/in/ronak-narkhede/">
-			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br> 
+			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br>
 			<br>
 	  </div>
       <div style="text-align: justify;">
-        Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with Professor Timothy Kowaleski. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+        Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
         <br><br>
         When I am not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
       </div>
     </td>
-    <td style="width: 30%; vertical-align: top; border: none; text-align: center;">
+    <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
       <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 10px;">
     </td>
   </tr>
