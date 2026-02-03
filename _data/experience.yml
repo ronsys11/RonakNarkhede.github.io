@@ -2,22 +2,7 @@
 # Medical Robots and Devices Lab
 # ---------------------------------------------------------------
 - year: "2024"
-  logo: ""
+  logo: "images/unnamed2x.webp"
   title: "Graduate Researcher"
   description: Medical Robots and Devices Lab, University of Minnesota - Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.
 
-# ---------------------------------------------------------------
-# Choice Robotics Lab
-# ---------------------------------------------------------------
-- year: "2024"
-  logo: ""
-  title: "Graduate Researcher"
-  description: Choice Robotics Lab, University of Minnesota - Developed a hybrid training pipeline using Behavioral Cloning and Soft Actor Critic to train a simulated bimanual robot for a complex manipulation task. Engineered a vision-based policy with a custom CNN in PyTorch.
-
-# ---------------------------------------------------------------
-# Phychem Technologies
-# ---------------------------------------------------------------
-- year: "2022"
-  logo: ""
-  title: "Robotics Engineer"
-  description: Phychem Technologies - Played a key role in the development of a parallel delta robot. Conducted kinematic analysis, workspace optimization, and implemented inverse kinematics. Developed a custom ROS package for the delta robot with closed-loop control.
