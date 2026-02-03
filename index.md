@@ -3,9 +3,9 @@ layout: default
 ---
 
 ## About Me
-<table style="border: none; background: transparent;">
-    <td style="border: none;"> <img class="profile-picture" src="me.jpeg" style="width: 25%; height: auto;"></td>
-    <td style="border: none;"><div class="profile-doc">
+<tr>
+    <td> <img class="profile-picture" src="me.jpeg" style="width: 25%; height: auto;"></td>
+    <td><div class="profile-doc">
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
 		<br> 
@@ -21,7 +21,7 @@ layout: default
 
 Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with Professor Timothy Kowaleski. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
 
-When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
+When I am not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
 
 
 
