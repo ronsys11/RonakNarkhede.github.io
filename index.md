@@ -18,7 +18,7 @@ layout: default
 			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br>
 			<br>
 	  </div>
-      <div style="text-align: justify;">
+      <div style="text-align: left;">
         Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
         <br><br>
         When I am not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
