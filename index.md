@@ -3,11 +3,9 @@ layout: default
 ---
 
 ## About Me
-
-<table>
-<tr>
-    <td> <img class="profile-picture" src="me.jpeg" style="width: 25%; height: auto;"></td>
-    <td><div class="profile-doc">
+<table style="border: none; background: transparent;">
+    <td style="border: none;"> <img class="profile-picture" src="me.jpeg" style="width: 25%; height: auto;"></td>
+    <td style="border: none;"><div class="profile-doc">
 		M.Sc @ University of Minnesota <br>
         Robotics<br>
 		<br> 
@@ -20,21 +18,21 @@ layout: default
 			<br>
 	</div></td>
 </tr>
-</table>
 
-<div style="margin-top: 30px; margin-bottom: 30px;">
-Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with Professor Timothy Kowaleski. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I'm drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
-<br><br>
-When I'm not working on robotic arms, you'll find me watching too much sports, cooking food, and hosting whoever's brave enough to try them.
-</div>
+Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with Professor Timothy Kowaleski. My current research focuses on making stroke thrombectomy accessible through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+
+When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
+
+
+
 
 ---
-
 ## Experience
 {% assign years = site.data.experience | group_by:"year" | sort: "name" | reverse %}
 
 {% for year in years %}
 ### {{ year.name }}	
+---
 
 {% for jobs in year.items %}
 <table class="paper-list">
@@ -71,9 +69,202 @@ When I'm not working on robotic arms, you'll find me watching too much sports, c
 {% endfor %}
 {% endfor %}
 
+
+<!-- ## Publications
+{% assign years = site.data.papers | group_by:"year" | sort: "name" | reverse %}
+
+{% for year in years %}
+### {{ year.name }}	
 ---
 
+{% for paper in year.items %}
+<table class="paper-list">
+  <tr>
+  	{% if paper.paper-logo %}
+    <td><img class="paper-logo" src="{{paper.paper-logo}}"></td>
+	{% endif %}
+	{% if paper.paper-logo-mp4 %}
+    <td>
+		<div class="paper-logo">
+		<video width="80%" height="80%" muted autoplay loop>
+			<source src="{{paper.paper-logo-mp4}}" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		</div>
+	</td>
+	{% endif %}
+    <td>
+		<p class="paper-title">{{paper.paper-title}}</p>  
+		<p class="paper-authors">
+			{% for author in paper.paper-authors %}
+				{% if forloop.last == true %}
+					{{author.name}}.
+				{% else %}
+					{{author.name}},
+				{% endif %}
+			{% endfor %}
+		</p>
+		<p class="paper-pub">{{paper.paper-pub}}</p>
+		<p class="paper-links">
+			{% if paper.link-pdf %}
+			<a href="{{paper.link-pdf}}" target="_blank" rel="noopener">
+				<i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF </a>
+			{% endif %}
+
+		</p>
+	</td>
+  </tr>
+</table>
+{% endfor %}
+{% endfor %} -->
+
+---
+<!-- ## Projects
+
+<tr>
+    <td><div>
+	    <a href="https://github.com/aman190202/neural_fields_bvc">
+            <i class="fa fa-github" aria-hidden="true"></i> Neural Fields with encoding:</a> A comparision of different encoding methods for 2D inputs
+            <br> 
+            <br> 
+        <a href="https://github.com/aman190202/LovingVincentt">
+			<i class="fa fa-github" aria-hidden="true"></i> Loving Vincet:</a> Convert your videos into moving paintings of your choice
+            <br> 
+            <br> 
+        <a href="https://github.com/aman190202/ray_tracing_weekend">
+			<i class="fa fa-github" aria-hidden="true"></i>  Ray Tracer on MLX:</a> Implementing an entire Ray Tracer built from scratch in NumPy and modifying it to run on <a href="https://ml-explore.github.io/mlx/build/html/index.html">MLX</a>,a NumPy-like array framework designed for efficient and flexible machine learning on Apple silicon. [Ongoing]
+            <br>
+			<br> 
+        <a href="https://devpost.com/software/rescue-shark">
+			<i class="fa fa-github" aria-hidden="true"></i>  Rescue Shark:</a> Built a SOS application for Truck Drivers - Won a MLH Hackathon for "Most Creative Use of Twilio"
+            <br>
+			<br> 
+	</div></td>
+</tr> -->
+
+<style>
+    body {
+        background-color: #ffffff !important; /* Set background to white */
+        color: #000000; /* Change text color to black for visibility */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #000000; /* Ensure all headings are visible on white background */
+    }
+    .page-title {
+        color: orange; /* Set your title color to orange */
+    }
+    .header-name {
+        color: orange; /* Set your name color to orange */
+    }
+    .link-box {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .link-box:hover {
+        transform: scale(1.05); /* Pop-up effect */
+    }
+    a {
+        color: #4da6ff; /* Default link color (light blue) */
+        text-decoration: none; /* Remove underline */
+    }
+    a:hover {
+        color: orange; /* Change link color to orange on hover */
+        text-decoration: underline; /* Optional: add underline on hover */
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .project-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-image {
+        width: auto;
+        border-radius: 10px;
+        height: 200px;
+        max-width: 100%;
+    }
+    
+    /* Dynamic background for experience section */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Experience section styling */
+    .paper-list {
+        background: linear-gradient(270deg, #f5f5f5, #e5e5e5, #f5f5f5);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite; /* Apply animation */
+        color: #000000; /* Text color */
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+        border: 1px solid #cccccc;
+    }
+    .paper-list:hover {
+        transform: scale(1.02);
+    }
+    .paper-title {
+        color: #000000 !important;
+        font-weight: bold;
+    }
+    .paper-authors, .paper-pub, .paper-links {
+        color: #333333 !important;
+    }
+    .paper-logo {
+        background-color: transparent !important;
+    }
+    
+    /* Fix for any tables in the document */
+    table {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-collapse: collapse;
+    }
+    td, th {
+        color: #000000 !important;
+        padding: 8px;
+        background-color: #ffffff !important;
+    }
+    
+    /* Profile section */
+    .profile-doc, .profile-picture {
+        color: #000000 !important;
+    }
+    
+    /* Resume section styling */
+    .resume-section, .resume-section * {
+        color: #000000 !important; /* Ensure all text in the resume section is black */
+    }
+    
+    section, div, article {
+        background-color: #ffffff !important;
+    }
+</style>
+
+
+
 ## Projects
+
+
+
 
 <div class="project-container">
     <!-- Project 1: UR5 Flashlight Assembly -->
@@ -165,119 +356,17 @@ When I'm not working on robotic arms, you'll find me watching too much sports, c
     </div>
 </div>
 
+
+<!-- ---
+## Invited talks
+
+Date | Event | Details
+-----|-------|--------
+April, 24th 2024 | FMX 2024  | Survey on NeRFs and 3DGS for the Lighting & Rendering track organized by [Christophe Hery](https://www.linkedin.com/in/christophehery/) in Stuttgart, Germany. Thank you all for the great time there!
+May, 6th 2024 | Machine Learning Coffee Seminar | Finnish Center for Artificial Intelligence (FCAI) [talk](https://fcai.fi/calendar/2024/5/6/juho-kannala-tba) on neural rendering. -->
+
+
 ---
 <br>
-Template Credits: <a href="https://maturk.github.io">Matias Turkulainen</a>
+ Template Credits : <a href="https://maturk.github.io">Matias Turkulainen</a>
 
-<style>
-    body {
-        background-color: #ffffff !important;
-        color: #000000;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: #000000;
-    }
-    .page-title {
-        color: orange;
-    }
-    .header-name {
-        color: orange;
-    }
-    .link-box {
-        position: relative;
-        display: inline-block;
-        padding: 10px;
-        border: 2px solid #000000;
-        border-radius: 8px;
-        transition: transform 0.3s;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .link-box:hover {
-        transform: scale(1.05);
-    }
-    a {
-        color: #4da6ff;
-        text-decoration: none;
-    }
-    a:hover {
-        color: orange;
-        text-decoration: underline;
-    }
-    .project-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    .project-item {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .project-image {
-        width: auto;
-        border-radius: 10px;
-        height: 200px;
-        max-width: 100%;
-    }
-    
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    .paper-list {
-        background: linear-gradient(270deg, #f5f5f5, #e5e5e5, #f5f5f5);
-        background-size: 400% 400%;
-        animation: gradientAnimation 15s ease infinite;
-        color: #000000;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 15px;
-        transition: transform 0.3s;
-        border: 1px solid #cccccc;
-    }
-    .paper-list:hover {
-        transform: scale(1.02);
-    }
-    .paper-title {
-        color: #000000 !important;
-        font-weight: bold;
-    }
-    .paper-authors, .paper-pub, .paper-links {
-        color: #333333 !important;
-    }
-    .paper-logo {
-        background-color: transparent !important;
-    }
-    
-    table {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        border-collapse: collapse;
-    }
-    td, th {
-        color: #000000 !important;
-        padding: 8px;
-        background-color: #ffffff !important;
-    }
-    
-    .profile-doc, .profile-picture {
-        color: #000000 !important;
-    }
-    
-    .resume-section, .resume-section * {
-        color: #000000 !important;
-    }
-    
-    section, div, article {
-        background-color: #ffffff !important;
-    }
-</style>
