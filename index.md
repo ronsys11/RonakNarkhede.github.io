@@ -369,7 +369,7 @@ layout: default
 
 Date | Event | Details
 -----|-------|--------
-April 30, 2025 | Design of Medical Devices Conference | Talk revieiwng the Corpath GRX and Magellan robot for stroke intervention.
+April 30, 2025 | Design of Medical Devices Conference | Talk revieiwng the Corpath GRX and Magellan robot for stroke intervention. [Link](https://dmd.umn.edu/2025/robotics)
 
 
 ---
