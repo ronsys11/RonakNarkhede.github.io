@@ -77,7 +77,7 @@ layout: default
 {% endfor %}
 
 
-<!-- ## Publications
+## Publications
 {% assign years = site.data.papers | group_by:"year" | sort: "name" | reverse %}
 
 {% for year in years %}
@@ -123,7 +123,7 @@ layout: default
   </tr>
 </table>
 {% endfor %}
-{% endfor %} -->
+{% endfor %}
 
 ---
 <!-- ## Projects
@@ -236,6 +236,11 @@ layout: default
         color: #333333 !important;
     }
     .paper-logo {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
         background-color: transparent !important;
     }
     
