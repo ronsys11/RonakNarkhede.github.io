@@ -88,7 +88,7 @@ layout: default
 <table class="paper-list">
   <tr>
   	{% if paper.paper-logo %}
-    <td><img class="paper-logo" src="{{paper.paper-logo}}"></td>
+    <td><img class="paper-logo publication-gif" src="{{paper.paper-logo}}"></td>
 	{% endif %}
 	{% if paper.paper-logo-mp4 %}
     <td>
@@ -236,12 +236,15 @@ layout: default
         color: #333333 !important;
     }
     .paper-logo {
-        width: 250px;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 8px;
         background-color: transparent !important;
+    }
+    
+    .publication-gif {
+        width: 200px;
+        height: 120px;
+        object-fit: contain;
+        background-color: #000;
+        border-radius: 8px;
     }
     
     /* Fix for any tables in the document */
