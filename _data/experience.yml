@@ -4,5 +4,5 @@
 - year: "2024"
   logo: "images/unnamed2x.webp"
   title: "Graduate Researcher"
-  description: Medical Robots and Devices Lab, University of Minnesota - Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.
+  description: Developing a telerobotic system that allows surgeons to perform stroke procedures remotely, enabling stroke intervention in areas that lack specialized care. Partnered with Dr. Andrew Grande (UMN Neurosurgery) and Medtronic to secure ARPA-H AIR federal grant funding (selected past initial solution summary to full proposal stage).
 
