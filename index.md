@@ -20,7 +20,7 @@ layout: default
 			<br>
 	  </div>
       <div style="text-align: left;">
-        Hello! I am Ronak, a graduate student at the Medical Robotics and Devices Lab working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on making stroke treatment accessible through telerobotic systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+        Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
         <br><br>
         Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
         <br><br>
