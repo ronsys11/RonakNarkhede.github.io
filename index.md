@@ -17,17 +17,18 @@ layout: default
 		<a href="https://www.linkedin.com/in/ronak-narkhede/">
 			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br>
 			<br>
+			<br>
 	  </div>
       <div style="text-align: left;">
         Hello! I am Ronak, a graduate student at the **Medical Robotics and Devices Lab** working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on **making stroke thrombectomy accessible** through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
-<br><br>
-Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
-<br><br>
-When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
+        <br><br>
+        Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
+        <br><br>
+        When I am not working on my robotic arms, you'll find me watching sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
-      <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 8px; margin-top: 15px;">
+      <img class="profile-picture" src="me.jpeg" style="width: 100%; height: auto; border-radius: 30%; margin-top: 15px;">
     </td>
   </tr>
 </table>
