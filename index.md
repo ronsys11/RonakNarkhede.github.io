@@ -19,9 +19,11 @@ layout: default
 			<br>
 	  </div>
       <div style="text-align: left;">
-        Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
-        <br><br>
-        When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
+        Hello! I am Ronak, a graduate student at the **Medical Robotics and Devices Lab** working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on **making stroke thrombectomy accessible** through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+<br><br>
+Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
+<br><br>
+When I am not working on my robotic arms, you'll find me watching too much sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
@@ -323,7 +325,7 @@ layout: default
                 <h3>Sir Hovers-a-Lot (Drone)</h3>
             </a>
         </div>
-        <p>Developed a quadcopter drone equipped with advanced autonomy and mapping capabilities. Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation. Implemented behavioral cloning.</p>
+        <p>Developed a quadcopter drone equipped with autonomy and mapping capabilities. Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation. Implemented behavioral cloning.</p>
     </div>
     
     <!-- Project 5: Vision based Robot Control -->
