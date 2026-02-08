@@ -48,7 +48,9 @@ layout: default
 <table class="paper-list">
   <tr>
   	{% if jobs.logo %}
-    <td><img class="paper-logo" src="{{jobs.logo}}"></td>
+    <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
+        <img class="paper-logo" src="{{jobs.logo}}" style="width: auto; max-width: 100%; max-height: 120px;">
+    </td>
 	{% endif %}
 	{% if paper.paper-logo-mp4 %}
     <td>
