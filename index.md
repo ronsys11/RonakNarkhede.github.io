@@ -93,7 +93,9 @@ layout: default
 <table class="paper-list">
   <tr>
   	{% if paper.paper-logo %}
-    <td><img class="paper-logo publication-gif" src="{{paper.paper-logo}}"></td>
+    <td style="width: 220px; min-width: 220px; text-align: center; vertical-align: middle;">
+        <img class="paper-logo publication-gif" src="{{paper.paper-logo}}">
+    </td>
 	{% endif %}
 	{% if paper.paper-logo-mp4 %}
     <td>
