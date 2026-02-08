@@ -24,7 +24,7 @@ layout: default
         <br><br>
         Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
         <br><br>
-        When I am not working on my robotic arms, you'll find me watching sports, cooking exotic cuisines, and hosting whoever's brave enough to try them.
+        When I am not working on my robotic arms, you'll find me watching sports, cooking exotic cuisines, and hosting friends who are brave enough to try them.
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
@@ -45,7 +45,7 @@ layout: default
 ---
 
 {% for jobs in year.items %}
-<table class="paper-list">
+<table class="paper-list" style="margin-top: 15px;">
   <tr>
   	{% if jobs.logo %}
     <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
