@@ -203,6 +203,7 @@ layout: default
         border-radius: 10px;
         height: 200px;
         max-width: 100%;
+        object-fit: contain;
     }
     
     /* Dynamic background for experience section */
