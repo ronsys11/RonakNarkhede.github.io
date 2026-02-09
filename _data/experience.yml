@@ -9,5 +9,5 @@
 - year: "2025"
   logo: "images/Choice.jpg"
   title: "Volunteer Graduate Researcher"
-  description: Choice Robotics Lab, University of Minnesota - Developed reinforcement learning policies for bimanual manipulation on the ALOHA robot. Combined imitation learning with reinforcement learning, achieving 78% success rate on cube transfer with 23% improved training efficiency.
+  description: Worked on reinforcement learning policies for bimanual manipulation on the ALOHA robot. Combined imitation learning with reinforcement learning, achieving 78% success rate on cube transfer with 23% improved training efficiency.
 
