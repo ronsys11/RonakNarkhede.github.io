@@ -16,8 +16,7 @@ layout: default
 			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br>
 		<a href="https://www.linkedin.com/in/ronak-narkhede/">
 			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br>
-			<br>
-			<br>
+
 	  </div>
       <div style="text-align: left;">
         Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
@@ -361,7 +360,7 @@ layout: default
         <div class="link-box">
             <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_tracker.png" alt="EM Motion Tracker" class="project-image">
-                <h3>(Ongoing) 6 DOF EM Motion Tracker</h3>
+                <h3>6 DOF EM Motion Tracker</h3>
             </a>
         </div>
         <p>Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.</p>
