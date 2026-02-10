@@ -24,7 +24,6 @@ layout: default
         <br><br>
         Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
         <br><br>
-        When I am not working on my robotic arms, you'll find me watching sports, cooking exotic cuisines, and hosting friends who are brave enough to try them.
       </div>
     </td>
     <td style="width: 30%; vertical-align: middle; border: none; text-align: center;">
@@ -397,7 +396,7 @@ layout: default
 
 Date | Event | Details
 -----|-------|--------
-April 30, 2025 | Design of Medical Devices Conference | Talk revieiwng the Corpath GRX and Magellan robot for stroke intervention. [Link](https://dmd.umn.edu/2025/robotics)
+April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpath GRX and Magellan robot for stroke intervention. [Link](https://dmd.umn.edu/2025/robotics)
 
 
 ---
