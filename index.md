@@ -336,7 +336,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_vision_robot.png" alt="Vision based Robot Control" class="project-image">
+                <img src="assets/projects/proj_vision_based_robot_control.gif" alt="Vision based Robot Control" class="project-image">
                 <h3>Vision based Control of a Serial Manipulator</h3>
             </a>
         </div>
