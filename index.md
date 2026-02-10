@@ -181,6 +181,15 @@ layout: default
     .link-box:hover {
         transform: scale(1.05); /* Pop-up effect */
     }
+    .link-box h3 {
+        min-height: 3.5rem;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+    }
     a {
         color: #4da6ff; /* Default link color (light blue) */
         text-decoration: none; /* Remove underline */
@@ -337,7 +346,7 @@ layout: default
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_vision_based_robot_control.gif" alt="Vision based Robot Control" class="project-image">
-                <h3>Vision based Control of a Serial Manipulator</h3>
+                <h3>Vision based Robot Control</h3>
             </a>
         </div>
         <p>Developed a novel Human-Machine Interface to simplify programming robotic manipulators. Utilized a wireless pointer and a stereo camera for intuitive point selection and task simulation. Integrated ROS, ArUco markers, and visual feedback.</p>
