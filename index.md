@@ -159,6 +159,7 @@ layout: default
         background-color: #ffffff !important; /* Set background to white */
         color: #000000; /* Change text color to black for visibility */
         font-family: 'Garamond', serif;
+        font-size: 1.2em;
     }
     h1, h2, h3, h4, h5, h6 {
         color: #000000; /* Ensure all headings are visible on white background */
