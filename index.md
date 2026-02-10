@@ -158,6 +158,7 @@ layout: default
     body {
         background-color: #ffffff !important; /* Set background to white */
         color: #000000; /* Change text color to black for visibility */
+        font-family: 'Garamond', serif;
     }
     h1, h2, h3, h4, h5, h6 {
         color: #000000; /* Ensure all headings are visible on white background */
@@ -301,7 +302,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/1ctY7z71yzgrHjeew_uOCG2yhOH7aU4XC" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_ur5.png" alt="UR5 Flashlight Assembly" class="project-image">
+                <img src="assets/projects/proj_ur5.gif" alt="UR5 Flashlight Assembly" class="project-image">
                 <h3>UR5 Flashlight Assembly</h3>
             </a>
         </div>
@@ -312,7 +313,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/11_A4dyopk6ykT5S--rciaXSho9IaOo9-/view?usp=drive_link" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_teleop.png" alt="Teleoperated Robot Arm" class="project-image">
+                <img src="assets/projects/proj_teleop.gif" alt="Teleoperated Robot Arm" class="project-image">
                 <h3>(Ongoing) Teleoperated 6 DOF Robot Arm</h3>
             </a>
         </div>
@@ -323,7 +324,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/15IMl670nH-7Ln1oAfM3LpgCL-k2uVWAq" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_aloha.png" alt="Transformer Policy for Aloha Robot" class="project-image">
+                <img src="assets/projects/proj_aloha.gif" alt="Transformer Policy for Aloha Robot" class="project-image">
                 <h3>Transformer Policy for Aloha Robot</h3>
             </a>
         </div>
