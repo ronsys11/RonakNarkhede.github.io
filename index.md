@@ -163,14 +163,15 @@ layout: default
         line-height: 1.5;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #111111; /* Slightly darker charcoal for headings */
+        color: #333333; /* Softer charcoal for headings */
+        font-weight: 500; /* Less bold for headings */
     }
     b, strong {
         color: #333333; /* Softer charcoal for bold text */
         font-weight: 600; /* Slightly less heavy than default bold */
     }
     .page-title {
-        color: orange; /* Set your title color to orange */
+        color: #333333 !important; /* Override orange title to match charcoal theme if desired, or keep as is. User asked for titles to be charcoal. */
     }
     .header-name {
         color: orange; /* Set your name color to orange */
