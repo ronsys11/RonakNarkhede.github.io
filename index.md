@@ -165,6 +165,10 @@ layout: default
     h1, h2, h3, h4, h5, h6 {
         color: #111111; /* Slightly darker charcoal for headings */
     }
+    b, strong {
+        color: #333333; /* Softer charcoal for bold text */
+        font-weight: 600; /* Slightly less heavy than default bold */
+    }
     .page-title {
         color: orange; /* Set your title color to orange */
     }
@@ -337,7 +341,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1iw5D4wbwfcecyPsg6_81mdaVSpeTGBU_" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_drone.jpeg" alt="Autonomous Drone" class="project-image">
+                <img src="assets/projects/proj_drone.gif" alt="Autonomous Drone" class="project-image">
                 <h3>Sir Hovers-a-Lot (Drone)</h3>
             </a>
         </div>
