@@ -163,15 +163,15 @@ layout: default
         line-height: 1.5;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #333333; /* Softer charcoal for headings */
-        font-weight: 500; /* Less bold for headings */
+        color: #2a2a2a; /* Dark charcoal - softer than black, darker than prev */
+        font-weight: 600; /* Semi-Bold - heavier than prev 500 */
     }
     b, strong {
-        color: #333333; /* Softer charcoal for bold text */
-        font-weight: 600; /* Slightly less heavy than default bold */
+        color: #2a2a2a; /* Dark charcoal */
+        font-weight: 700; /* Standard Bold - returning closer to original weight */
     }
     .page-title {
-        color: #333333 !important; /* Override orange title to match charcoal theme if desired, or keep as is. User asked for titles to be charcoal. */
+        color: #2a2a2a !important; /* Match new charcoal theme */
     }
     .header-name {
         color: orange; /* Set your name color to orange */
