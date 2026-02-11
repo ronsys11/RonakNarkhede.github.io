@@ -5,10 +5,13 @@
   paper-logo: "assets/publications/Telerobotics_demo_2.gif"
   paper-title: "Towards Remote Thrombectomy with Telerobotically-Driven Guidewires"
   paper-authors: 
-    - name: <b>Ronak Narkhede</b>
+    - name: "Pin-Hao Cheng*, <b>Ronak Narkhede*</b>, Matt Rajala*, Jared Schultz*"
       institutions: []
-    
-    - name: et al.
+    - name: "Nathan Harbinson, Samuel Fisher, Nitish Poojari, Sharva Khandagale, Alex Berg, Keara Berlin, Adam Imdieke, Michael Feldkamp"
+      institutions: []
+    - name: "Scott Frushour, Kaustubh Patil, Mark Ashby, William Peine"
+      institutions: []
+    - name: "Sean L. Moen, Andrew Grande, Karthik Desingh, Timothy M. Kowalewski"
       institutions: []
 
   institutions: 
@@ -24,10 +27,7 @@
   paper-logo: "assets/publications/Soft_robot_demo.gif"
   paper-title: "Estimating the Non-Parametric Jacobian of a Tendon-Driven Soft Robot End-Effector"
   paper-authors: 
-    - name: <b>Ronak Narkhede</b>
-      institutions: []
-
-    - name: et al.
+    - name: "Orla Gotthelf, Yusra Farhat Ullah, <b>Ronak Narkhede</b>, Caleb Fick, Timothy M. Kowalewski"
       institutions: []
 
   institutions: 
