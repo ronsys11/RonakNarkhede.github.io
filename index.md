@@ -241,7 +241,7 @@ layout: default
         background: linear-gradient(270deg, #f5f5f5, #e5e5e5, #f5f5f5);
         background-size: 400% 400%;
         animation: gradientAnimation 15s ease infinite; /* Apply animation */
-        color: #000000; /* Text color */
+        color: #2a2a2a; /* Text color - charcoal */
         border-radius: 8px;
         padding: 10px;
         margin-bottom: 15px;
@@ -252,8 +252,8 @@ layout: default
         transform: scale(1.02);
     }
     .paper-title {
-        color: #000000 !important;
-        font-weight: bold;
+        color: #2a2a2a !important;
+        font-weight: 600;
     }
     .paper-authors, .paper-pub, .paper-links {
         color: #333333 !important;
@@ -273,23 +273,23 @@ layout: default
     /* Fix for any tables in the document */
     table {
         background-color: #ffffff !important;
-        color: #000000 !important;
+        color: #2a2a2a !important;
         border-collapse: collapse;
     }
     td, th {
-        color: #000000 !important;
+        color: #2a2a2a !important;
         padding: 8px;
         background-color: #ffffff !important;
     }
     
     /* Profile section */
     .profile-doc, .profile-picture {
-        color: #000000 !important;
+        color: #2a2a2a !important;
     }
     
     /* Resume section styling */
     .resume-section, .resume-section * {
-        color: #000000 !important; /* Ensure all text in the resume section is black */
+        color: #2a2a2a !important; /* Ensure all text in the resume section is charcoal */
     }
     
     section, div, article {
