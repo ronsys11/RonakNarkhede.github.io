@@ -375,7 +375,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_aruco.png" alt="ArUco Cube Pose Estimation" class="project-image">
+                <img src="assets/projects/proj_aruco.gif" alt="ArUco Cube Pose Estimation" class="project-image">
                 <h3>ArUco Cube Pose Estimation</h3>
             </a>
         </div>
