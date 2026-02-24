@@ -364,7 +364,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_tracker.png" alt="EM Motion Tracker" class="project-image">
+                <img src="assets/projects/proj_tracker.gif" alt="EM Motion Tracker" class="project-image">
                 <h3>6 DOF EM Motion Tracker</h3>
             </a>
         </div>
@@ -386,7 +386,7 @@ layout: default
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_td3.png" alt="TD3 Door Opening Agent" class="project-image">
+                <img src="assets/projects/proj_td3.gif" alt="TD3 Door Opening Agent" class="project-image">
                 <h3>TD3 Based Door Opening Agent</h3>
             </a>
         </div>
