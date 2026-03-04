@@ -403,8 +403,13 @@ Date | Event | Details
 April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpath GRX and Magellan robot for stroke intervention. [Link](https://dmd.umn.edu/2025/robotics)
 
 ---
+---
 <br>
-> No man is an island, entire of itself; every man is a piece of the continent, a part of the main. And therefore never send to know for whom the bell tolls; it tolls for thee.
+<div style="font-size: 0.85em; color: #555555;">
+    <blockquote>
+        No man is an island, entire of itself; every man is a piece of the continent, a part of the main. And therefore never send to know for whom the bell tolls; it tolls for thee. — John Donne
+    </blockquote>
+</div>
 ---
 <br>
  Template Credits : <a href="https://maturk.github.io">Matias Turkulainen</a>
