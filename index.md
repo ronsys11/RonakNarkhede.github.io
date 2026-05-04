@@ -215,6 +215,11 @@ layout: default
         text-align: center;
         margin-bottom: 20px;
     }
+    .project-item:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc((100% - 20px) / 2);
+    }
     .project-image {
         width: auto;
         border-radius: 10px;
@@ -305,7 +310,18 @@ layout: default
 
 
 <div class="project-container">
-    <!-- Project 1: UR5 Flashlight Assembly -->
+    <!-- Project 1: Autonomous Catheter Navigation -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="assets/projects/proj_auto_catheter.gif" style="text-decoration: none; color: inherit;">
+                <img src="assets/projects/proj_auto_catheter.gif" alt="Autonomous Catheter Navigation" class="project-image">
+                <h3>Autonomous Catheter Navigation</h3>
+            </a>
+        </div>
+        <p>Built an autonomous catheter navigation system using a 1-DOF steerable catheter with an EM tracker embedded at the tip. Developed an online Jacobian-based controller that maps tip displacement error to actuation commands to achieve accurate, closed loop navigation in a minimally invasive setting.</p>
+    </div>
+
+    <!-- Project 2: UR5 Flashlight Assembly -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/1ctY7z71yzgrHjeew_uOCG2yhOH7aU4XC" style="text-decoration: none; color: inherit;">
@@ -316,7 +332,7 @@ layout: default
         <p>Using RoboDK and Python API to write a flashlight assembly program.</p>
     </div>
 
-    <!-- Project 2: Teleoperated Robot Arm -->
+    <!-- Project 3: Teleoperated Robot Arm -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/11_A4dyopk6ykT5S--rciaXSho9IaOo9-/view?usp=drive_link" style="text-decoration: none; color: inherit;">
@@ -327,7 +343,7 @@ layout: default
         <p>The problems you face when simulating robots versus working with actual hardware are very different, which is why I decided to build my own robot arm setup at home. I plan to learn Rust by writing its control system in it.</p>
     </div>
     
-    <!-- Project 3: Transformer Policy for Aloha Robot -->
+    <!-- Project 4: Transformer Policy for Aloha Robot -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/15IMl670nH-7Ln1oAfM3LpgCL-k2uVWAq" style="text-decoration: none; color: inherit;">
@@ -338,7 +354,7 @@ layout: default
         <p>A transformer based policy using PyTorch for bi-manual robotic manipulation tasks, enabling robots to perform complex actions such as cube transfer and insertion in simulated and real-world environments.</p>
     </div>
     
-    <!-- Project 4: Sir Hovers-a-Lot (Drone) -->
+    <!-- Project 5: Sir Hovers-a-Lot (Drone) -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1iw5D4wbwfcecyPsg6_81mdaVSpeTGBU_" style="text-decoration: none; color: inherit;">
@@ -349,7 +365,7 @@ layout: default
         <p>Developed a quadcopter drone equipped with autonomy and mapping capabilities. Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation. Implemented behavioral cloning.</p>
     </div>
     
-    <!-- Project 5: Vision based Robot Control -->
+    <!-- Project 6: Vision based Robot Control -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M" style="text-decoration: none; color: inherit;">
@@ -360,7 +376,7 @@ layout: default
         <p>Developed a novel Human-Machine Interface to simplify programming robotic manipulators. Utilized a wireless pointer and a stereo camera for intuitive point selection and task simulation. Integrated ROS, ArUco markers, and visual feedback.</p>
     </div>
     
-    <!-- Project 6: 6 DOF EM Motion Tracker -->
+    <!-- Project 7: 6 DOF EM Motion Tracker -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
@@ -371,7 +387,7 @@ layout: default
         <p>Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.</p>
     </div>
     
-    <!-- Project 7: ArUco Cube Pose Estimation -->
+    <!-- Project 8: ArUco Cube Pose Estimation -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh" style="text-decoration: none; color: inherit;">
@@ -382,7 +398,7 @@ layout: default
         <p>Real-time ArUco marker detection using OpenCV. Pose estimation for a cube with ArUco markers. Visualizing the detected cube in RViz with the help of RViz markers.</p>
     </div>
     
-    <!-- Project 8: TD3 Door Opening Agent -->
+    <!-- Project 9: TD3 Door Opening Agent -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc" style="text-decoration: none; color: inherit;">
