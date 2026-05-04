@@ -318,7 +318,7 @@ layout: default
                 <h3>Autonomous Catheter Navigation</h3>
             </a>
         </div>
-        <p>Built an autonomous catheter navigation system using a 1-DOF steerable catheter with an EM tracker embedded at the tip. Developed an online Jacobian-based controller that maps tip displacement error to actuation commands to achieve accurate, closed loop navigation in a minimally invasive setting.</p>
+        <p>Built an autonomous catheter navigation system using a 1-DOF steerable catheter with an EM tracker embedded at the tip. It uses an online Jacobian based controller that maps tip displacement error to actuation commands to achieve accurate, closed loop navigation in a minimally invasive setting.</p>
     </div>
 
     <!-- Project 2: UR5 Flashlight Assembly -->
