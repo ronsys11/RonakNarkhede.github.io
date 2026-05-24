@@ -3,11 +3,11 @@
 # ---------------------------------------------------------------
 - year: "2025"
   logo: "images/unnamed2x.webp"
-  title: "Graduate Research Assistant — Medical Robotics and Devices Lab"
+  title: "Graduate Research Assistant, Medical Robotics and Devices Lab"
   description: Built a real-time motion tracking system using an electromagnetic sensor for 6-DOF pose estimation in surgical navigation, integrated with a tendon-driven soft robot for closed-loop control using a data-driven Jacobian estimate. Developed and deployed a multi-threaded teleoperation platform for remote surgical robot control (FastAPI, WebSockets, REST, WebRTC). Implemented OpenCV/ArUco guidewire detection with a safety stop to prevent full guidewire retraction from the vascular phantom. Defined communication protocols between the server and ESP32 for low-latency control (~80 ms avg). Partnered with <a href="https://med.umn.edu/bio/andrew-grande">Dr. Andrew Grande</a> and <a href="https://www.medtronic.com/en-us/index.html">Medtronic</a> to pursue <a href="https://arpa-h.gov/explore-funding/programs/air">ARPA-H AIR</a> federal grant funding (advanced past initial screening to full proposal stage).
 
 - year: "2025"
   logo: "images/Choice.jpg"
-  title: "Research Volunteer — Choice Robotics Lab"
+  title: "Research Volunteer, Choice Robotics Lab"
   description: Engineered a learning framework for the ALOHA bimanual robot using MuJoCo and Gymnasium for contact-rich tasks (cube transfer, peg-in-hole insertion). Developed a hybrid Behavioral Cloning + Soft Actor-Critic pipeline, pre-training on 50 expert demonstrations before RL fine-tuning. Improved sample efficiency by 23% and achieved 78% success on the transfer cube task.
 
