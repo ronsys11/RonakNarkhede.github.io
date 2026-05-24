@@ -217,6 +217,11 @@ layout: default
         margin-bottom: 20px;
         min-width: 0;
     }
+    .project-item:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc((100% - 20px) / 2);
+    }
     .project-image {
         width: auto;
         border-radius: 10px;
@@ -362,18 +367,7 @@ layout: default
         <p>A transformer based policy using PyTorch for bi-manual robotic manipulation tasks, enabling robots to perform complex actions such as cube transfer and insertion in simulated and real-world environments.</p>
     </div>
     
-    <!-- Project 6: Sir Hovers-a-Lot (Drone) -->
-    <div class="project-item">
-        <div class="link-box">
-            <a href="https://drive.google.com/drive/folders/1iw5D4wbwfcecyPsg6_81mdaVSpeTGBU_" style="text-decoration: none; color: inherit;">
-                <img src="assets/projects/proj_drone.gif" alt="Autonomous Drone" class="project-image">
-                <h3>Sir Hovers-a-Lot (Drone)</h3>
-            </a>
-        </div>
-        <p>Developed a quadcopter drone equipped with autonomy and mapping capabilities. Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation. Implemented behavioral cloning.</p>
-    </div>
-    
-    <!-- Project 7: Vision based Robot Control -->
+    <!-- Project 6: Vision based Robot Control -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M" style="text-decoration: none; color: inherit;">
@@ -384,7 +378,7 @@ layout: default
         <p>Built a wireless vision-based teach pendant for a 3-DOF robot arm using a stereo camera and ArUco markers for hand-eye calibration and intuitive 3D point selection. Engineered a ROS control pipeline to transform selected 3D coordinates into target joint angles via numerical inverse kinematics.</p>
     </div>
     
-    <!-- Project 8: 6 DOF EM Motion Tracker -->
+    <!-- Project 7: 6 DOF EM Motion Tracker -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
@@ -395,7 +389,7 @@ layout: default
         <p>Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.</p>
     </div>
     
-    <!-- Project 9: ArUco Cube Pose Estimation -->
+    <!-- Project 8: ArUco Cube Pose Estimation -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh" style="text-decoration: none; color: inherit;">
@@ -406,7 +400,7 @@ layout: default
         <p>Real-time ArUco marker detection using OpenCV. Pose estimation for a cube with ArUco markers. Visualizing the detected cube in RViz with the help of RViz markers.</p>
     </div>
     
-    <!-- Project 10: TD3 Door Opening Agent -->
+    <!-- Project 9: TD3 Door Opening Agent -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc" style="text-decoration: none; color: inherit;">
