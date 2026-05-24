@@ -25,7 +25,7 @@
 # ---------------------------------------------------------------
 - year: "2026"
   paper-logo: "assets/publications/Soft_robot_demo.gif"
-  paper-title: "Estimating the Non-Parametric Jacobian of a Tendon-Driven Soft Robot End-Effector"
+  paper-title: "Estimating the Non-parametric Jacobian of a Tendon-driven Soft Robot"
   paper-authors: 
     - name: "Orla Gotthelf, Yusra Farhat Ullah, Ronak Narkhede, Caleb Fick, Timothy M. Kowalewski"
       institutions: []

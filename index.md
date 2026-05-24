@@ -208,17 +208,14 @@ layout: default
     }
     .project-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        align-items: start;
     }
     .project-item {
         text-align: center;
         margin-bottom: 20px;
-    }
-    .project-item:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        justify-self: center;
-        width: calc((100% - 20px) / 2);
+        min-width: 0;
     }
     .project-image {
         width: auto;
@@ -310,7 +307,18 @@ layout: default
 
 
 <div class="project-container">
-    <!-- Project 1: Autonomous Catheter Navigation -->
+    <!-- Project 1: Surgeon-Side VR Teleoperating Console -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://alpha.stroke-robot.org/" style="text-decoration: none; color: inherit;">
+                <img src="assets/projects/proj_vr_surgeon_console.gif" alt="Surgeon-Side VR Teleoperating Console" class="project-image">
+                <h3>Surgeon-Side VR Teleoperating Console</h3>
+            </a>
+        </div>
+        <p>Meta Quest 3 AR app built in Unity 6 with Meta XR SDK. Loads a vascular mesh from patient data. Navigation mode renders a centerline graph as a cyan skeleton on a semi-transparent vessel mesh, with BFS pathfinding to the clot. Streams live MJPEG video and teleoperates a 2-DOF surgical robot through a vascular phantom.</p>
+    </div>
+
+    <!-- Project 2: Autonomous Catheter Navigation -->
     <div class="project-item">
         <div class="link-box">
             <a href="assets/projects/proj_auto_catheter.gif" style="text-decoration: none; color: inherit;">
@@ -321,7 +329,7 @@ layout: default
         <p>Built an autonomous catheter navigation system using a 1-DOF steerable catheter with an EM tracker embedded at the tip. It uses an online Jacobian based controller that maps tip displacement error to actuation commands to achieve accurate, closed loop navigation in a minimally invasive setting.</p>
     </div>
 
-    <!-- Project 2: UR5 Flashlight Assembly -->
+    <!-- Project 3: UR5 Flashlight Assembly -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/1ctY7z71yzgrHjeew_uOCG2yhOH7aU4XC" style="text-decoration: none; color: inherit;">
@@ -329,10 +337,10 @@ layout: default
                 <h3>UR5 Flashlight Assembly</h3>
             </a>
         </div>
-        <p>Using RoboDK and Python API to write a flashlight assembly program.</p>
+        <p>Programmed a UR5 for automated flashlight assembly using Python (RoboDK) and URScript, with pneumatic grippers and force-controlled threading. Implemented Cartesian impedance control from raw force sensor feedback for compliant peg-in-hole insertion without vision. Tuned TCP offsets and center of gravity for reliable force-controlled operations.</p>
     </div>
 
-    <!-- Project 3: Teleoperated Robot Arm -->
+    <!-- Project 4: Teleoperated Robot Arm -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/11_A4dyopk6ykT5S--rciaXSho9IaOo9-/view?usp=drive_link" style="text-decoration: none; color: inherit;">
@@ -343,7 +351,7 @@ layout: default
         <p>The problems you face when simulating robots versus working with actual hardware are very different, which is why I decided to build my own robot arm setup at home. I plan to learn Rust by writing its control system in it.</p>
     </div>
     
-    <!-- Project 4: Transformer Policy for Aloha Robot -->
+    <!-- Project 5: Transformer Policy for Aloha Robot -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/u/0/folders/15IMl670nH-7Ln1oAfM3LpgCL-k2uVWAq" style="text-decoration: none; color: inherit;">
@@ -354,7 +362,7 @@ layout: default
         <p>A transformer based policy using PyTorch for bi-manual robotic manipulation tasks, enabling robots to perform complex actions such as cube transfer and insertion in simulated and real-world environments.</p>
     </div>
     
-    <!-- Project 5: Sir Hovers-a-Lot (Drone) -->
+    <!-- Project 6: Sir Hovers-a-Lot (Drone) -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1iw5D4wbwfcecyPsg6_81mdaVSpeTGBU_" style="text-decoration: none; color: inherit;">
@@ -365,7 +373,7 @@ layout: default
         <p>Developed a quadcopter drone equipped with autonomy and mapping capabilities. Integrated SLAM using Hector SLAM for 2D mapping and ORB-SLAM3 for 3D visual-inertial navigation. Implemented behavioral cloning.</p>
     </div>
     
-    <!-- Project 6: Vision based Robot Control -->
+    <!-- Project 7: Vision based Robot Control -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1F3ncokIQqA96nlAp_7txGGaQY-cq6g5M" style="text-decoration: none; color: inherit;">
@@ -373,10 +381,10 @@ layout: default
                 <h3>Vision based Robot Control</h3>
             </a>
         </div>
-        <p>Developed a novel Human-Machine Interface to simplify programming robotic manipulators. Utilized a wireless pointer and a stereo camera for intuitive point selection and task simulation. Integrated ROS, ArUco markers, and visual feedback.</p>
+        <p>Built a wireless vision-based teach pendant for a 3-DOF robot arm using a stereo camera and ArUco markers for hand-eye calibration and intuitive 3D point selection. Engineered a ROS control pipeline to transform selected 3D coordinates into target joint angles via numerical inverse kinematics.</p>
     </div>
     
-    <!-- Project 7: 6 DOF EM Motion Tracker -->
+    <!-- Project 8: 6 DOF EM Motion Tracker -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
@@ -387,7 +395,7 @@ layout: default
         <p>Built real time motion tracking system using EM sensor for 6 DOF pose estimation in surgical navigation application. Developed sensor data processing pipeline with Kalman filtering for position tracking at 120 Hz update rate.</p>
     </div>
     
-    <!-- Project 8: ArUco Cube Pose Estimation -->
+    <!-- Project 9: ArUco Cube Pose Estimation -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh" style="text-decoration: none; color: inherit;">
@@ -398,7 +406,7 @@ layout: default
         <p>Real-time ArUco marker detection using OpenCV. Pose estimation for a cube with ArUco markers. Visualizing the detected cube in RViz with the help of RViz markers.</p>
     </div>
     
-    <!-- Project 9: TD3 Door Opening Agent -->
+    <!-- Project 10: TD3 Door Opening Agent -->
     <div class="project-item">
         <div class="link-box">
             <a href="https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc" style="text-decoration: none; color: inherit;">
