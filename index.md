@@ -47,7 +47,7 @@ layout: default
   <tr>
   	{% if jobs.logo_mp4 %}
     <td class="experience-media-cell">
-        <div class="paper-logo experience-video-wrapper" role="button" tabindex="0" aria-label="Play experience video fullscreen">
+        <div class="experience-video-wrapper" role="button" tabindex="0" aria-label="Play experience video fullscreen">
         {% if jobs.logo_poster %}
         <img class="experience-video-thumb" src="{{ site.baseurl }}/{{ jobs.logo_poster }}" alt="Experience video thumbnail">
         {% endif %}
@@ -291,7 +291,7 @@ layout: default
         min-width: 200px;
         max-width: 200px;
         text-align: center;
-        vertical-align: top;
+        vertical-align: middle;
         background-color: transparent !important;
     }
 
@@ -300,9 +300,14 @@ layout: default
         background-color: transparent !important;
     }
 
-    .experience-video-thumb {
-        width: 100%;
-        height: auto;
+    .content .paper-list .experience-video-wrapper {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    .content .paper-list .experience-video-thumb {
+        width: 100% !important;
+        height: auto !important;
         display: block;
         border-radius: 8px;
         border: 1px solid #cccccc;
