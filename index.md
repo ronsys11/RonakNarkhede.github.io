@@ -19,7 +19,7 @@ layout: default
 			<br>
 	  </div>
       <div style="text-align: left;">
-        Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to hardware because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
+        Hello! I am Ronak, a graduate student at the <b>Medical Robotics and Devices Lab</b> working with <a href="https://cse.umn.edu/me/tim-kowalewski">Professor Timothy Kowaleski</a>. My current research focuses on <b>making stroke thrombectomy accessible</b> through telerobotic surgical systems. I am drawn to robots because tools are how humans built civilizations, and I believe robots are the next iteration. They'll help us build at scale and eventually climb the Kardashev scale. I want to be part of that story (and also generate shareholder value along the way:)).
         <br><br>
         Try out the <a href="https://alpha.stroke-robot.org/">live telerobotic demo here</a>.
         <br><br>
@@ -62,7 +62,7 @@ layout: default
 	{% endif %}
     <td>
 		<p class="paper-title">{{jobs.title}}</p>  
-		<p class="paper-authors">
+		<p class="paper-authors experience-description">
 			{{jobs.description}}
 		</p>
 		<p class="paper-pub">{{paper.paper-pub}}</p>
@@ -265,6 +265,9 @@ layout: default
     .paper-authors, .paper-pub, .paper-links {
         color: #333333 !important;
     }
+    .experience-description {
+        line-height: 1.7;
+    }
     .paper-logo {
         background-color: transparent !important;
     }
@@ -315,7 +318,7 @@ layout: default
     <!-- Project 1: Surgeon-Side VR Teleoperating Console -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://alpha.stroke-robot.org/" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_vr_surgeon_console.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_vr_surgeon_console.gif" alt="Surgeon-Side VR Teleoperating Console" class="project-image">
                 <h3>Surgeon-Side VR Teleoperating Console</h3>
             </a>
@@ -337,7 +340,7 @@ layout: default
     <!-- Project 3: UR5 Flashlight Assembly -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/drive/u/0/folders/1ctY7z71yzgrHjeew_uOCG2yhOH7aU4XC" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_ur5.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_ur5.gif" alt="UR5 Flashlight Assembly" class="project-image">
                 <h3>UR5 Flashlight Assembly</h3>
             </a>
@@ -348,7 +351,7 @@ layout: default
     <!-- Project 4: Teleoperated Robot Arm -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/file/d/11_A4dyopk6ykT5S--rciaXSho9IaOo9-/view?usp=drive_link" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_teleop.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_teleop.gif" alt="Teleoperated Robot Arm" class="project-image">
                 <h3>(Ongoing) Teleoperated 6 DOF Robot Arm</h3>
             </a>
@@ -359,7 +362,7 @@ layout: default
     <!-- Project 5: Transformer Policy for Aloha Robot -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/drive/u/0/folders/15IMl670nH-7Ln1oAfM3LpgCL-k2uVWAq" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_aloha.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_aloha.gif" alt="Transformer Policy for Aloha Robot" class="project-image">
                 <h3>Transformer Policy for Aloha Robot</h3>
             </a>
@@ -381,7 +384,7 @@ layout: default
     <!-- Project 7: 6 DOF EM Motion Tracker -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/file/d/1KZv5142z8e9m32j-nkVnDMWSq6dzEXOI/view?usp=drive_link" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_tracker.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_tracker.gif" alt="EM Motion Tracker" class="project-image">
                 <h3>6 DOF EM Motion Tracker</h3>
             </a>
@@ -392,7 +395,7 @@ layout: default
     <!-- Project 8: ArUco Cube Pose Estimation -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/drive/folders/1jvETnl3htr7RRM5neljxJIG9WsdGSKbh" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_aruco.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_aruco.gif" alt="ArUco Cube Pose Estimation" class="project-image">
                 <h3>ArUco Cube Pose Estimation</h3>
             </a>
@@ -403,7 +406,7 @@ layout: default
     <!-- Project 9: TD3 Door Opening Agent -->
     <div class="project-item">
         <div class="link-box">
-            <a href="https://drive.google.com/drive/folders/1wWLABdD6L2ZanNf9owkOiDKWn6KCdfWc" style="text-decoration: none; color: inherit;">
+            <a href="assets/projects/proj_td3.gif" style="text-decoration: none; color: inherit;">
                 <img src="assets/projects/proj_td3.gif" alt="TD3 Door Opening Agent" class="project-image">
                 <h3>TD3 Based Door Opening Agent</h3>
             </a>
