@@ -62,11 +62,11 @@ layout: default
         </div>
     </td>
 	{% elsif jobs.logo %}
-    <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
+    <td class="experience-media-cell">
         <img class="paper-logo" src="{{jobs.logo}}" style="width: auto; max-width: 100%; max-height: 120px;">
     </td>
 	{% endif %}
-    <td>
+    <td class="experience-content-cell">
 		<p class="paper-title">{{jobs.title}}</p>  
 		<p class="paper-authors experience-description">
 			{{jobs.description}}
@@ -287,20 +287,24 @@ layout: default
     }
 
     .experience-media-cell {
-        width: 320px;
-        min-width: 320px;
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
         text-align: center;
-        vertical-align: middle;
+        vertical-align: top;
+        background-color: transparent !important;
+    }
+
+    .experience-content-cell {
+        vertical-align: top;
         background-color: transparent !important;
     }
 
     .experience-video-thumb {
-        width: 320px;
-        height: 183px;
-        object-fit: contain;
-        background-color: #6d1f2a;
-        border-radius: 8px;
+        width: 100%;
+        height: auto;
         display: block;
+        border-radius: 8px;
         border: 1px solid #cccccc;
     }
 
@@ -308,8 +312,8 @@ layout: default
         position: absolute;
         top: 0;
         left: 0;
-        width: 320px;
-        height: 183px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         opacity: 0;
         pointer-events: none;
@@ -318,7 +322,8 @@ layout: default
 
     .experience-video-wrapper {
         position: relative;
-        display: inline-block;
+        display: block;
+        width: 100%;
         cursor: pointer;
         border-radius: 8px;
         overflow: hidden;
