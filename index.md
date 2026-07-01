@@ -287,18 +287,18 @@ layout: default
     }
 
     .experience-media-cell {
-        width: 200px;
-        min-width: 200px;
+        width: 320px;
+        min-width: 320px;
         text-align: center;
         vertical-align: middle;
         background-color: transparent !important;
     }
 
     .experience-video-thumb {
-        width: 200px;
-        height: 120px;
-        object-fit: cover;
-        background-color: #1a1a1a;
+        width: 320px;
+        height: 183px;
+        object-fit: contain;
+        background-color: #6d1f2a;
         border-radius: 8px;
         display: block;
         border: 1px solid #cccccc;
@@ -308,9 +308,9 @@ layout: default
         position: absolute;
         top: 0;
         left: 0;
-        width: 200px;
-        height: 120px;
-        object-fit: cover;
+        width: 320px;
+        height: 183px;
+        object-fit: contain;
         opacity: 0;
         pointer-events: none;
         background-color: transparent !important;
