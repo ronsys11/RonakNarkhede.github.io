@@ -48,7 +48,10 @@ layout: default
   	{% if jobs.logo-mp4 %}
     <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
         <div class="paper-logo experience-video-wrapper" role="button" tabindex="0" aria-label="Play experience video fullscreen">
-        <video class="experience-video" preload="metadata" playsinline>
+        {% if jobs.logo-poster %}
+        <img class="experience-video-thumb" src="{{ jobs.logo-poster }}" alt="Experience video thumbnail">
+        {% endif %}
+        <video class="experience-video" preload="none" playsinline{% if jobs.logo-poster %} poster="{{ jobs.logo-poster }}"{% endif %}>
             <source src="{{ jobs.logo-mp4 | replace: ' ', '%20' }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -283,13 +286,24 @@ layout: default
         border-radius: 8px;
     }
 
-    .experience-video {
+    .experience-video-thumb {
         width: 200px;
         height: 120px;
         object-fit: cover;
         background-color: #000;
         border-radius: 8px;
         display: block;
+    }
+
+    .experience-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        opacity: 0;
+        pointer-events: none;
     }
 
     .experience-video-wrapper {
