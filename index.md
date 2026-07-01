@@ -45,20 +45,23 @@ layout: default
 {% for jobs in year.items %}
 <table class="paper-list" style="margin-top: 15px;">
   <tr>
-  	{% if jobs.logo %}
+  	{% if jobs.logo-mp4 %}
+    <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
+        <div class="paper-logo experience-video-wrapper" role="button" tabindex="0" aria-label="Play experience video fullscreen">
+        <video class="experience-video" preload="metadata" playsinline>
+            <source src="{{ jobs.logo-mp4 | replace: ' ', '%20' }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="experience-video-overlay">
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <span>Play video</span>
+        </div>
+        </div>
+    </td>
+	{% elsif jobs.logo %}
     <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
         <img class="paper-logo" src="{{jobs.logo}}" style="width: auto; max-width: 100%; max-height: 120px;">
     </td>
-	{% endif %}
-	{% if paper.paper-logo-mp4 %}
-    <td>
-		<div class="paper-logo">
-		<video width="80%" height="80%" muted autoplay loop>
-			<source src="{{paper.paper-logo-mp4}}" type="video/mp4">
-			Your browser does not support the video tag.
-		</video>
-		</div>
-	</td>
 	{% endif %}
     <td>
 		<p class="paper-title">{{jobs.title}}</p>  
@@ -266,7 +269,7 @@ layout: default
         color: #333333 !important;
     }
     .experience-description {
-        line-height: 1.7;
+        line-height: 1.6;
     }
     .paper-logo {
         background-color: transparent !important;
@@ -278,6 +281,52 @@ layout: default
         object-fit: contain;
         background-color: #000;
         border-radius: 8px;
+    }
+
+    .experience-video {
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        background-color: #000;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .experience-video-wrapper {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .experience-video-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        transition: background 0.2s;
+        border-radius: 8px;
+        pointer-events: none;
+    }
+
+    .experience-video-overlay i {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    .experience-video-overlay span {
+        font-size: 0.75rem;
+        margin-top: 4px;
+        letter-spacing: 0.02em;
+    }
+
+    .experience-video-wrapper:hover .experience-video-overlay {
+        background: rgba(0, 0, 0, 0.55);
     }
     
     /* Fix for any tables in the document */
@@ -434,3 +483,71 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
 ---
 <br>
  Template Credits : <a href="https://maturk.github.io">Matias Turkulainen</a>
+
+<script>
+(function () {
+    document.querySelectorAll('.experience-video-wrapper').forEach(function (wrapper) {
+        var video = wrapper.querySelector('video');
+
+        function requestVideoFullscreen() {
+            if (video.requestFullscreen) {
+                return video.requestFullscreen();
+            }
+            if (video.webkitRequestFullscreen) {
+                return video.webkitRequestFullscreen();
+            }
+            if (video.webkitEnterFullscreen) {
+                video.webkitEnterFullscreen();
+                return Promise.resolve();
+            }
+            return Promise.reject();
+        }
+
+        function isVideoFullscreen() {
+            return document.fullscreenElement === video ||
+                document.webkitFullscreenElement === video;
+        }
+
+        function resetVideo() {
+            video.pause();
+            video.currentTime = 0;
+            video.controls = false;
+            video.muted = true;
+        }
+
+        async function playFullscreen() {
+            video.muted = false;
+            video.controls = true;
+
+            try {
+                await requestVideoFullscreen();
+            } catch (err) {
+                window.open(video.querySelector('source').src, '_blank');
+                return;
+            }
+
+            try {
+                await video.play();
+            } catch (err) {
+                /* Browser may block playback until another gesture */
+            }
+        }
+
+        wrapper.addEventListener('click', playFullscreen);
+        wrapper.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                playFullscreen();
+            }
+        });
+
+        document.addEventListener('fullscreenchange', function () {
+            if (!isVideoFullscreen()) {
+                resetVideo();
+            }
+        });
+
+        video.addEventListener('webkitendfullscreen', resetVideo);
+    });
+})();
+</script>

@@ -2,7 +2,7 @@
 # Medical Robots and Devices Lab
 # ---------------------------------------------------------------
 - year: "2025"
-  logo: "images/unnamed2x.webp"
+  logo-mp4: "assets/experience/Ronak Capstone Video.mp4"
   title: "Graduate Research Assistant, Medical Robotics and Devices Lab"
   description: Built a real-time motion tracking system using an electromagnetic sensor for 6-DOF pose estimation in surgical navigation, integrated with a tendon-driven soft robot for closed-loop control using a data-driven Jacobian estimate. Developed and deployed a multi-threaded teleoperation platform for remote surgical robot control (FastAPI, WebSockets, REST, WebRTC). Implemented OpenCV/ArUco guidewire detection with a safety stop to prevent full guidewire retraction from the vascular phantom. Defined communication protocols between the server and ESP32 for low-latency control (~80 ms avg). Partnered with <a href="https://med.umn.edu/bio/andrew-grande">Dr. Andrew Grande</a> and <a href="https://www.medtronic.com/en-us/index.html">Medtronic</a> to pursue <a href="https://arpa-h.gov/explore-funding/programs/air">ARPA-H AIR</a> federal grant funding (invited for full proposal).
 
