@@ -45,14 +45,14 @@ layout: default
 {% for jobs in year.items %}
 <table class="paper-list" style="margin-top: 15px;">
   <tr>
-  	{% if jobs.logo-mp4 %}
-    <td style="width: 200px; min-width: 200px; text-align: center; vertical-align: middle;">
+  	{% if jobs.logo_mp4 %}
+    <td class="experience-media-cell">
         <div class="paper-logo experience-video-wrapper" role="button" tabindex="0" aria-label="Play experience video fullscreen">
-        {% if jobs.logo-poster %}
-        <img class="experience-video-thumb" src="{{ jobs.logo-poster }}" alt="Experience video thumbnail">
+        {% if jobs.logo_poster %}
+        <img class="experience-video-thumb" src="{{ site.baseurl }}/{{ jobs.logo_poster }}" alt="Experience video thumbnail">
         {% endif %}
-        <video class="experience-video" preload="none" playsinline{% if jobs.logo-poster %} poster="{{ jobs.logo-poster }}"{% endif %}>
-            <source src="{{ jobs.logo-mp4 | replace: ' ', '%20' }}" type="video/mp4">
+        <video class="experience-video" preload="none" playsinline{% if jobs.logo_poster %} poster="{{ site.baseurl }}/{{ jobs.logo_poster }}"{% endif %}>
+            <source src="{{ site.baseurl }}/{{ jobs.logo_mp4 | replace: ' ', '%20' }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="experience-video-overlay">
@@ -286,13 +286,22 @@ layout: default
         border-radius: 8px;
     }
 
+    .experience-media-cell {
+        width: 200px;
+        min-width: 200px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: transparent !important;
+    }
+
     .experience-video-thumb {
         width: 200px;
         height: 120px;
         object-fit: cover;
-        background-color: #000;
+        background-color: #1a1a1a;
         border-radius: 8px;
         display: block;
+        border: 1px solid #cccccc;
     }
 
     .experience-video {
@@ -304,6 +313,7 @@ layout: default
         object-fit: cover;
         opacity: 0;
         pointer-events: none;
+        background-color: transparent !important;
     }
 
     .experience-video-wrapper {
@@ -312,6 +322,7 @@ layout: default
         cursor: pointer;
         border-radius: 8px;
         overflow: hidden;
+        background-color: transparent !important;
     }
 
     .experience-video-overlay {
@@ -321,8 +332,8 @@ layout: default
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.4);
-        color: #ffffff;
+        background: rgba(0, 0, 0, 0.5) !important;
+        color: #ffffff !important;
         transition: background 0.2s;
         border-radius: 8px;
         pointer-events: none;
@@ -331,16 +342,18 @@ layout: default
     .experience-video-overlay i {
         font-size: 2.2rem;
         line-height: 1;
+        color: #ffffff !important;
     }
 
     .experience-video-overlay span {
         font-size: 0.75rem;
         margin-top: 4px;
         letter-spacing: 0.02em;
+        color: #ffffff !important;
     }
 
     .experience-video-wrapper:hover .experience-video-overlay {
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(0, 0, 0, 0.65) !important;
     }
     
     /* Fix for any tables in the document */
@@ -532,11 +545,15 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
         async function playFullscreen() {
             video.muted = false;
             video.controls = true;
+            var source = video.querySelector('source');
+            var videoSrc = source ? source.getAttribute('src') : '';
 
             try {
                 await requestVideoFullscreen();
             } catch (err) {
-                window.open(video.querySelector('source').src, '_blank');
+                if (videoSrc) {
+                    window.open(videoSrc, '_blank');
+                }
                 return;
             }
 
