@@ -51,8 +51,8 @@ layout: default
         {% if jobs.logo_poster %}
         <img class="experience-video-thumb" src="{{ site.baseurl }}/{{ jobs.logo_poster }}" alt="Experience video thumbnail">
         {% endif %}
-        <video class="experience-video" preload="none" playsinline{% if jobs.logo_poster %} poster="{{ site.baseurl }}/{{ jobs.logo_poster }}"{% endif %}>
-            <source src="{{ site.baseurl }}/{{ jobs.logo_mp4 | replace: ' ', '%20' }}" type="video/mp4">
+        <video class="experience-video" preload="metadata" playsinline{% if jobs.logo_poster %} poster="{{ site.baseurl }}/{{ jobs.logo_poster }}"{% endif %}>
+            <source src="{{ site.baseurl }}/{{ jobs.logo_mp4 }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="experience-video-overlay">
@@ -322,7 +322,13 @@ layout: default
         object-fit: contain;
         opacity: 0;
         pointer-events: none;
-        background-color: transparent !important;
+        background-color: #000 !important;
+    }
+
+    .experience-video.is-playing {
+        opacity: 1 !important;
+        pointer-events: auto;
+        z-index: 2;
     }
 
     .experience-video-wrapper {
@@ -525,6 +531,8 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
 (function () {
     document.querySelectorAll('.experience-video-wrapper').forEach(function (wrapper) {
         var video = wrapper.querySelector('video');
+        var overlay = wrapper.querySelector('.experience-video-overlay');
+        var thumb = wrapper.querySelector('.experience-video-thumb');
 
         function requestVideoFullscreen() {
             if (video.requestFullscreen) {
@@ -542,25 +550,60 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
 
         function isVideoFullscreen() {
             return document.fullscreenElement === video ||
-                document.webkitFullscreenElement === video;
+                document.webkitFullscreenElement === video ||
+                document.fullscreenElement === wrapper ||
+                document.webkitFullscreenElement === wrapper;
         }
 
         function resetVideo() {
             video.pause();
-            video.currentTime = 0;
+            try { video.currentTime = 0; } catch (e) {}
             video.controls = false;
             video.muted = true;
+            video.classList.remove('is-playing');
+            if (overlay) overlay.style.display = '';
+            if (thumb) thumb.style.visibility = '';
+        }
+
+        function waitForCanPlay() {
+            if (video.readyState >= 2) {
+                return Promise.resolve();
+            }
+            return new Promise(function (resolve, reject) {
+                var onReady = function () {
+                    cleanup();
+                    resolve();
+                };
+                var onError = function () {
+                    cleanup();
+                    reject(new Error('video load failed'));
+                };
+                var cleanup = function () {
+                    video.removeEventListener('canplay', onReady);
+                    video.removeEventListener('loadeddata', onReady);
+                    video.removeEventListener('error', onError);
+                };
+                video.addEventListener('canplay', onReady);
+                video.addEventListener('loadeddata', onReady);
+                video.addEventListener('error', onError);
+                video.load();
+            });
         }
 
         async function playFullscreen() {
-            video.muted = false;
-            video.controls = true;
             var source = video.querySelector('source');
             var videoSrc = source ? source.getAttribute('src') : '';
 
+            video.muted = false;
+            video.controls = true;
+            video.classList.add('is-playing');
+            if (overlay) overlay.style.display = 'none';
+            if (thumb) thumb.style.visibility = 'hidden';
+
             try {
-                await requestVideoFullscreen();
+                await waitForCanPlay();
             } catch (err) {
+                resetVideo();
                 if (videoSrc) {
                     window.open(videoSrc, '_blank');
                 }
@@ -568,9 +611,23 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
             }
 
             try {
+                await requestVideoFullscreen();
+            } catch (err) {
+                try {
+                    await video.play();
+                } catch (playErr) {
+                    resetVideo();
+                    if (videoSrc) {
+                        window.open(videoSrc, '_blank');
+                    }
+                }
+                return;
+            }
+
+            try {
                 await video.play();
             } catch (err) {
-                /* Browser may block playback until another gesture */
+                /* Browser may block autoplay-with-sound until another gesture */
             }
         }
 
@@ -583,6 +640,11 @@ April 30, 2025 | Design of Medical Devices Conference | Talk reviewing the Corpa
         });
 
         document.addEventListener('fullscreenchange', function () {
+            if (!isVideoFullscreen()) {
+                resetVideo();
+            }
+        });
+        document.addEventListener('webkitfullscreenchange', function () {
             if (!isVideoFullscreen()) {
                 resetVideo();
             }
